@@ -1,80 +1,99 @@
-#main {
-  background-color: #f0f0f0;
-  font-family: Roboto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+
+:root {
+  --main-color: white; 
 }
 
-#title {
-  padding: 24px 0px 8px 0px;
+body {
+  background: var(--main-color);
+  color: var(--main-color);
+  font-family: Raleway, sans-serif;
 }
 
-h1 {
-  font-size: 30px;
-  font-weight: 700;
+#wrapper {
+  width: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+#quote-box {
+    background: white;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.quote {
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+}
+
+.fa-quote-left {
+  margin: 10px;
+}
+
+#text {
+  font-weight: 500;
+  font-size: 24px;
   text-align: center;
 }
 
-h2 {
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
+#author {
+  text-align: right;
 }
 
-#img-div {
-  background-color: #FFF;
-  padding: 0px 0px 4px 0px;
+#buttons {
+  display: flex;
+  align-items: center;
 }
 
-#image {
-  display: block;
+.btn {
+  background: var(--main-color);
+}
+
+.btn:hover {
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+}
+  
+.btn:focus {
+  box-shadow: none;
+}
+
+.social-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 3px;
+  background: var(--main-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3px;
+}
+
+#new-quote {
+  text-decorations: none;
+  color: white;
+  display: flex;
   margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-#img-caption {
-  font-size: 16px;
+#credits {
   text-align: center;
+  color: white;
+  margin-top: 10px;
 }
 
-#tribute-info {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-h3 {
-  text-align: center;
-  font-size: 20px;
-}
-
-ul {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-li {
-  font-size: 16px;
-  padding: 4px 0px 4px 0px;
-  line-height: 1.5;
-}
-
-#quote {
-  text-align: justify;
-  font-size: 16px;
-  font-style: italic;
-  color: #6e6e6e;
-}
-
-#more {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  padding-bottom: 40px;
+@media only screen and (max-width: 600px) {
+  #wrapper {
+     width: auto;
+     max-width: 500px;
+  }
 }
