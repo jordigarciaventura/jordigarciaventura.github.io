@@ -1,38 +1,54 @@
-<!--
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
--->
-
-<link
-  rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-/>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <title>Jordi García Ventura</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
-  <div id="wrapper">
-    <div id="quote-box">
-      <div class="quote">
-        <i class="fa fa-quote-left"></i>
-        <p id="text"></p>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <title>Random Quotes</title>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="quote-box">
+        <div class="quote">
+          <i class="fa fa-quote-left"></i>
+          <p id="text"></p>
+        </div>
+        <p id="author"></p>
+        <div id="buttons">
+          <a href="#" target="_top" id="tweet-quote" class="social-btn btn">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="#" target="_top" id="tumblr-quote" class="social-btn btn">
+            <i class="fa fa-tumblr"></i>
+          </a>
+          <a href="#" id="new-quote" class="btn">New quote</a>
+        </div>
       </div>
-      <p id="author"></p>
-      <div id="buttons">
-        <a href="#" target="_top" id ="tweet-quote" class="social-btn btn">
-          <i class="fa fa-twitter"></i>
-        </a>
-        <a href="#" target="_top" id="tumblr-quote" class="social-btn btn">
-          <i class="fa fa-tumblr"></i>
-        </a>
-        <a href="#" id="new-quote" class="btn">New quote</a>
-      </div>
+      <p id="credits">by Garven</p>
     </div>
-    <p id="credits">by Garven</p>
-  </div>
+
+  </body>
+
+  </html>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/react/17.0.1/umd/react.production.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.1/umd/react-dom.production.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tweet/2.2.0/jquery.tweet.min.js'></script>
+  <script src="./script.js"></script>
 
 </body>
 
