@@ -141,6 +141,12 @@ html, body {
 }
 
 @media only screen and (max-width: 450px) {
+  
+  #title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
   #clock-inputs {
     flex-direction: column;
   }
@@ -162,7 +168,7 @@ html, body {
     margin: 10px;
   }
   
-  html {
+  body {
     overflow: auto;
   }
   
